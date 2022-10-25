@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("back.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    margin-top: 20%;
+    display: flex;
+}
+
+.container {
+    margin: auto;
+    max-width: 1100px;
+}
+
+#board {
+    background: linear-gradient(lightgreen, yellow);
+    border: 2px solid black;
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    top: 8px;
+    right: 350px;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+#searchBox {
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Changa', sans-serif;
+
+}
+
+.head {
+    background: linear-gradient(rgb(100, 226, 100), rgb(248, 92, 235));
+    border: 2px solid black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+.head:hover {
+    transform: rotate(90deg);
+}
+
+
+.food {
+    background: blue;
+    border-radius: 30px;
+}
+
+.snake {
+    background: purple;
+    border-radius: 100%;
+}
